@@ -1,491 +1,697 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-         <title>Job board HTML-5 Template </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/flaticon.css">
-            <link rel="stylesheet" href="assets/css/price_rangs.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-   </head>
+<head>
+    <meta charset="utf-8">
+    <title>JobEntry - Job Portal Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-   <body>
-    <!-- Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
-    </div>
-    <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-       <div class="header-area header-transparrent">
-           <div class="headder-top header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-3 col-md-2">
-                            <!-- Logo -->
-                            <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                            </div>  
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">GlobalJobFinder24</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="job-list.html" class="dropdown-item">Job List</a>
+                            <a href="job-detail.html" class="dropdown-item">Top Jobs</a>
                         </div>
-                        <div class="col-lg-9 col-md-9">
-                            <div class="menu-wrapper">
-                                <!-- Main-menu -->
-                                <div class="main-menu">
-                                    <nav class="d-none d-lg-block">
-                                        <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="job_listing.html">Find a Jobs </a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
-                                                    <li><a href="job_details.html">job Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>          
-                                <!-- Header-btn -->
-                                <div class="header-btn d-none f-right d-lg-block">
-                                    <a href="#" class="btn head-btn1">Register</a>
-                                    <a href="#" class="btn head-btn2">Login</a>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="contact.html" class="btn border rounded-0 py-4 px-lg-3 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="contact.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Perfect Job That You Deserved</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">We make the hiring process efficient and effective, creating lasting connections that benefit both individuals and organizations.</p>
+                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
+                                    <a href="talents.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
                     </div>
                 </div>
-           </div>
-       </div>
-        <!-- Header End -->
-    </header>
-    <main>
-
-        <!-- slider Area Start-->
-        <div class="slider-area ">
-            <!-- Mobile Menu -->
-            <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-9 col-md-10">
-                                <div class="hero__caption">
-                                    <h1>Find the most exciting startup jobs</h1>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Best Startup Job That Fit You</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">We make the hiring process efficient and effective, creating lasting connections that benefit both individuals and organizations.</p>
+                                    <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search A Job</a>
+                                    <a href="talents.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Find A Talent</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- Search Box -->
-                        <div class="row">
-                            <div class="col-xl-8">
-                                <!-- form -->
-                                <form action="#" class="search-box">
-                                    <div class="input-form">
-                                        <input type="text" placeholder="Job Tittle or keyword">
-                                    </div>
-                                    <div class="select-form">
-                                        <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">Location BD</option>
-                                                <option value="">Location PK</option>
-                                                <option value="">Location US</option>
-                                                <option value="">Location UK</option>
-                                            </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=553997&format=300x250&ga=g"></script>
+<noscript><a href="https://yllix.com/publishers/553997" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/300x250.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-9">
+                        <div class="row g-2">
+                            <div class="col-md-12">
+                                <select class="form-select border-0" id="country-select">
+                                    <option selected>Location</option>
+                                    <option value="404.html?country=af">Afghanistan</option>
+                                    <option value="404.html?country=al">Albania</option>
+                                    <option value="404.html?country=dz">Algeria</option>
+                                    <option value="404.html?country=ad">Andorra</option>
+                                    <option value="404.html?country=ao">Angola</option>
+                                    <option value="404.html?country=ag">Antigua and Barbuda</option>
+                                    <option value="404.html?country=ar">Argentina</option>
+                                    <option value="404.html?country=am">Armenia</option>
+                                    <option value="404.html?country=au">Australia</option>
+                                    <option value="404.html?country=at">Austria</option>
+                                    <option value="404.html?country=az">Azerbaijan</option>
+                                    <option value="404.html?country=bs">Bahamas</option>
+                                    <option value="404.html?country=bh">Bahrain</option>
+                                    <option value="404.html?country=bd">Bangladesh</option>
+                                    <option value="404.html?country=bb">Barbados</option>
+                                    <option value="404.html?country=by">Belarus</option>
+                                    <option value="404.html?country=be">Belgium</option>
+                                    <option value="404.html?country=bz">Belize</option>
+                                    <option value="404.html?country=bj">Benin</option>
+                                    <option value="404.html?country=bt">Bhutan</option>
+                                    <option value="404.html?country=bo">Bolivia</option>
+                                    <option value="404.html?country=ba">Bosnia and Herzegovina</option>
+                                    <option value="404.html?country=bw">Botswana</option>
+                                    <option value="404.html?country=br">Brazil</option>
+                                    <option value="404.html?country=bn">Brunei</option>
+                                    <option value="404.html?country=bg">Bulgaria</option>
+                                    <option value="404.html?country=bf">Burkina Faso</option>
+                                    <option value="404.html?country=bi">Burundi</option>
+                                    <option value="404.html?country=cv">Cabo Verde</option>
+                                    <option value="404.html?country=kh">Cambodia</option>
+                                    <option value="404.html?country=cm">Cameroon</option>
+                                    <option value="job-ca.html?country=ca">Canada</option>
+                                    <option value="404.html?country=cf">Central African Republic</option>
+                                    <option value="404.html?country=td">Chad</option>
+                                    <option value="404.html?country=cl">Chile</option>
+                                    <option value="404.html?country=cn">China</option>
+                                    <option value="404.html?country=co">Colombia</option>
+                                    <option value="404.html?country=km">Comoros</option>
+                                    <option value="404.html?country=cd">Congo, Democratic Republic of the</option>
+                                    <option value="404.html?country=cg">Congo, Republic of the</option>
+                                    <option value="404.html?country=cr">Costa Rica</option>
+                                    <option value="404.html?country=ci">Côte d'Ivoire</option>
+                                    <option value="404.html?country=hr">Croatia</option>
+                                    <option value="404.html?country=cu">Cuba</option>
+                                    <option value="404.html?country=cy">Cyprus</option>
+                                    <option value="404.html?country=cz">Czech Republic</option>
+                                    <option value="404.html?country=dk">Denmark</option>
+                                    <option value="404.html?country=dj">Djibouti</option>
+                                    <option value="404.html?country=dm">Dominica</option>
+                                    <option value="404.html?country=do">Dominican Republic</option>
+                                    <option value="404.html?country=ec">Ecuador</option>
+                                    <option value="404.html?country=eg">Egypt</option>
+                                    <option value="404.html?country=sv">El Salvador</option>
+                                    <option value="404.html?country=gq">Equatorial Guinea</option>
+                                    <option value="404.html?country=er">Eritrea</option>
+                                    <option value="404.html?country=ee">Estonia</option>
+                                    <option value="404.html?country=sz">Eswatini</option>
+                                    <option value="404.html?country=et">Ethiopia</option>
+                                    <option value="404.html?country=fj">Fiji</option>
+                                    <option value="404.html?country=fi">Finland</option>
+                                    <option value="404.html?country=fr">France</option>
+                                    <option value="404.html?country=ga">Gabon</option>
+                                    <option value="404.html?country=gm">Gambia</option>
+                                    <option value="404.html?country=ge">Georgia</option>
+                                    <option value="404.html?country=de">Germany</option>
+                                    <option value="404.html?country=gh">Ghana</option>
+                                    <option value="404.html?country=gr">Greece</option>
+                                    <option value="404.html?country=gd">Grenada</option>
+                                    <option value="404.html?country=gt">Guatemala</option>
+                                    <option value="404.html?country=gn">Guinea</option>
+                                    <option value="404.html?country=gw">Guinea-Bissau</option>
+                                    <option value="404.html?country=gy">Guyana</option>
+                                    <option value="404.html?country=ht">Haiti</option>
+                                    <option value="404.html?country=hn">Honduras</option>
+                                    <option value="404.html?country=hu">Hungary</option>
+                                    <option value="404.html?country=is">Iceland</option>
+                                    <option value="404.html?country=in">India</option>
+                                    <option value="404.html?country=id">Indonesia</option>
+                                    <option value="404.html?country=ir">Iran</option>
+                                    <option value="404.html?country=iq">Iraq</option>
+                                    <option value="404.html?country=ie">Ireland</option>
+                                    <option value="404.html?country=il">Israel</option>
+                                    <option value="404.html?country=it">Italy</option>
+                                    <option value="404.html?country=jm">Jamaica</option>
+                                    <option value="404.html?country=jp">Japan</option>
+                                    <option value="404.html?country=jo">Jordan</option>
+                                    <option value="404.html?country=kz">Kazakhstan</option>
+                                    <option value="404.html?country=ke">Kenya</option>
+                                    <option value="404.html?country=ki">Kiribati</option>
+                                    <option value="404.html?country=kp">Korea, North</option>
+                                    <option value="404.html?country=kr">Korea, South</option>
+                                    <option value="404.html?country=kw">Kuwait</option>
+                                    <option value="404.html?country=kg">Kyrgyzstan</option>
+                                    <option value="404.html?country=la">Laos</option>
+                                    <option value="404.html?country=lv">Latvia</option>
+                                    <option value="404.html?country=lb">Lebanon</option>
+                                    <option value="404.html?country=ls">Lesotho</option>
+                                    <option value="404.html?country=lr">Liberia</option>
+                                    <option value="404.html?country=ly">Libya</option>
+                                    <option value="404.html?country=li">Liechtenstein</option>
+                                    <option value="404.html?country=lt">Lithuania</option>
+                                    <option value="404.html?country=lu">Luxembourg</option>
+                                    <option value="404.html?country=mg">Madagascar</option>
+                                    <option value="404.html?country=mw">Malawi</option>
+                                    <option value="404.html?country=my">Malaysia</option>
+                                    <option value="404.html?country=mv">Maldives</option>
+                                    <option value="404.html?country=ml">Mali</option>
+                                    <option value="404.html?country=mt">Malta</option>
+                                    <option value="404.html?country=mh">Marshall Islands</option>
+                                    <option value="404.html?country=mr">Mauritania</option>
+                                    <option value="404.html?country=mu">Mauritius</option>
+                                    <option value="404.html?country=mx">Mexico</option>
+                                    <option value="404.html?country=fm">Micronesia</option>
+                                    <option value="404.html?country=md">Moldova</option>
+                                    <option value="404.html?country=mc">Monaco</option>
+                                    <option value="404.html?country=mn">Mongolia</option>
+                                    <option value="404.html?country=me">Montenegro</option>
+                                    <option value="404.html?country=ma">Morocco</option>
+                                    <option value="404.html?country=mz">Mozambique</option>
+                                    <option value="404.html?country=mm">Myanmar</option>
+                                    <option value="404.html?country=na">Namibia</option>
+                                    <option value="404.html?country=nr">Nauru</option>
+                                    <option value="404.html?country=np">Nepal</option>
+                                    <option value="404.html?country=nl">Netherlands</option>
+                                    <option value="404.html?country=nz">New Zealand</option>
+                                    <option value="404.html?country=ni">Nicaragua</option>
+                                    <option value="404.html?country=ne">Niger</option>
+                                    <option value="404.html?country=ng">Nigeria</option>
+                                    <option value="404.html?country=mk">North Macedonia</option>
+                                    <option value="404.html?country=no">Norway</option>
+                                    <option value="404.html?country=om">Oman</option>
+                                    <option value="404.html?country=pk">Pakistan</option>
+                                    <option value="404.html?country=pw">Palau</option>
+                                    <option value="404.html?country=ps">Palestine</option>
+                                    <option value="404.html?country=pa">Panama</option>
+                                    <option value="404.html?country=pg">Papua New Guinea</option>
+                                    <option value="404.html?country=py">Paraguay</option>
+                                    <option value="404.html?country=pe">Peru</option>
+                                    <option value="404.html?country=ph">Philippines</option>
+                                    <option value="404.html?country=pl">Poland</option>
+                                    <option value="404.html?country=pt">Portugal</option>
+                                    <option value="404.html?country=qa">Qatar</option>
+                                    <option value="404.html?country=ro">Romania</option>
+                                    <option value="404.html?country=ru">Russia</option>
+                                    <option value="404.html?country=rw">Rwanda</option>
+                                    <option value="404.html?country=kn">Saint Kitts and Nevis</option>
+                                    <option value="404.html?country=lc">Saint Lucia</option>
+                                    <option value="404.html?country=vc">Saint Vincent and the Grenadines</option>
+                                    <option value="404.html?country=ws">Samoa</option>
+                                    <option value="404.html?country=sm">San Marino</option>
+                                    <option value="404.html?country=st">Sao Tome and Principe</option>
+                                    <option value="404.html?country=sa">Saudi Arabia</option>
+                                    <option value="404.html?country=sn">Senegal</option>
+                                    <option value="404.html?country=rs">Serbia</option>
+                                    <option value="404.html?country=sc">Seychelles</option>
+                                    <option value="404.html?country=sl">Sierra Leone</option>
+                                    <option value="404.html?country=sg">Singapore</option>
+                                    <option value="404.html?country=sk">Slovakia</option>
+                                    <option value="404.html?country=si">Slovenia</option>
+                                    <option value="404.html?country=sb">Solomon Islands</option>
+                                    <option value="404.html?country=so">Somalia</option>
+                                    <option value="404.html?country=za">South Africa</option>
+                                    <option value="404.html?country=ss">South Sudan</option>
+                                    <option value="404.html?country=es">Spain</option>
+                                    <option value="404.html?country=lk">Sri Lanka</option>
+                                    <option value="404.html?country=sd">Sudan</option>
+                                    <option value="404.html?country=sr">Suriname</option>
+                                    <option value="404.html?country=se">Sweden</option>
+                                    <option value="404.html?country=ch">Switzerland</option>
+                                    <option value="404.html?country=sy">Syria</option>
+                                    <option value="404.html?country=tw">Taiwan</option>
+                                    <option value="404.html?country=tj">Tajikistan</option>
+                                    <option value="404.html?country=tza">Tanzania</option>
+                                    <option value="404.html?country=th">Thailand</option>
+                                    <option value="404.html?country=tg">Togo</option>
+                                    <option value="404.html?country=to">Tonga</option>
+                                    <option value="404.html?country=tt">Trinidad and Tobago</option>
+                                    <option value="404.html?country=tn">Tunisia</option>
+                                    <option value="404.html?country=tr">Turkey</option>
+                                    <option value="404.html?country=tm">Turkmenistan</option>
+                                    <option value="404.html?country=tv">Tuvalu</option>
+                                    <option value="404.html?country=ug">Uganda</option>
+                                    <option value="404.html?country=ua">Ukraine</option>
+                                    <option value="404.html?country=ae">United Arab Emirates</option>
+                                    <option value="job-uk.html?country=gb">United Kingdom</option>
+                                    <option value="job-us.html?country=us">United States</option>
+                                    <option value="404.html?country=uy">Uruguay</option>
+                                    <option value="404.html?country=uz">Uzbekistan</option>
+                                    <option value="404.html?country=vu">Vanuatu</option>
+                                    <option value="404.html?country=va">Vatican City</option>
+                                    <option value="404.html?country=ve">Venezuela</option>
+                                    <option value="404.html?country=vn">Vietnam</option>
+                                    <option value="404.html?country=ye">Yemen</option>
+                                    <option value="404.html?country=zm">Zambia</option>
+                                    <option value="404.html?country=zw">Zimbabwe</option>
+                                </select>
+                            </div>                                                                                                                                         
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-dark border-0 w-100" id="locationSearch">Search</button>
+                    </div>
+                    <script>
+                        document.getElementById('locationSearch').addEventListener('click', function() {
+                            var selectElement = document.getElementById('country-select');
+                            var selectedValue = selectElement.value;
+                            if (selectedValue && selectedValue !== "404.html") {
+                                window.location.href = selectedValue;
+                            }
+                        });
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h6 class="mb-3">Marketing</h6>
+                            <p class="mb-0">134 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                            <h6 class="mb-3">Customer Service</h6>
+                            <p class="mb-0">423 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                            <h6 class="mb-3">Human Resource</h6>
+                            <p class="mb-0">34 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
+                            <h6 class="mb-3">Project Management</h6>
+                            <p class="mb-0">112 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
+                            <h6 class="mb-3">Business Development</h6>
+                            <p class="mb-0">78 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
+                            <h6 class="mb-3">Sales & Communication</h6>
+                            <p class="mb-0">14 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
+                            <h6 class="mb-3">Teaching & Education</h6>
+                            <p class="mb-0">183 Vacancy</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
+                            <h6 class="mb-3">Design & Creative</h6>
+                            <p class="mb-0">5 Vacancy</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <style>
+                        .expand {
+  max-height: 6.6em;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.expand::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.expand.expanded {
+  max-height: none;
+}
+
+.expand.expanded::after {
+  display: none;
+}
+
+button.expander {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+                    </style>
+
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
+                          <div class="expand">
+                            <p class="mb-4">At our platform, we specialize in connecting job seekers with the best career opportunities and helping employers find top talent. For job seekers, we offer personalized support, from resume building to job matching, ensuring you find roles that align with your skills and career goals. For employers, we provide a tailored recruitment process, identifying candidates who fit your company’s culture and objectives. By combining advanced technology with industry expertise, we make the hiring process efficient and effective, creating lasting connections that benefit both individuals and organizations.</p>
+                          </div>  
+                        <button class="btn btn-primary py-3 px-5 mt-3 expander" href="">Read More</button>
+                    </div>
+                    <script>
+                        document.querySelector('.expander').addEventListener('click', function() {
+  const expandDiv = document.querySelector('.expand');
+  expandDiv.classList.toggle('expanded');
+
+  if (expandDiv.classList.contains('expanded')) {
+    this.textContent = 'Read less';
+  } else {
+    this.textContent = 'Read more';
+  }
+});
+
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Jobs Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <h6 class="mt-n1 mb-0">Featured</h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="job-item p-4 mb-4"> 
+                                <div class="row g-4"> 
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="fe.jpg" alt="" style="width: 80px; height: 80px;"> 
+                                        <div class="text-start ps-4"> 
+                                            <h5 class="mb-3"><img src="https://flagcdn.com/us.svg" width="25px">&nbsp;Driver</h5>                                                  
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Cupertino, CA, United States</span> 
+                                            <span class="text-truncate me-3"><i class="far text-primary me-2 fa-building"></i>Fedex</span> 
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$140 - $456&nbsp;</span> 
                                         </div>
-                                    </div>
-                                    <div class="search-form">
-                                        <a href="#">Find job</a>
-                                    </div>	
-                                </form>	
+                                    </div>                                         
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center"> 
+                                        <div class="d-flex mb-3"> 
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> 
+                                            <a class="btn btn-primary" href="https://www.opph3hftrk.com/6GDBW3D/26387TZ/">Apply Now</a> 
+                                        </div>                                             
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2025</small> 
+                                    </div>                                         
+                                </div>                                     
+                            </div>                                 
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4"> 
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="https://freepnglogo.com/images/all_img/facebook-circle-logo-png.png" alt="" style="width: 80px; height: 80px;"> 
+                                        <div class="text-start ps-4"> 
+                                            <h5 class="mb-3"><img src="https://flagcdn.com/us.svg" width="25px">&nbsp;Engineering Manager</h5> 
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Menlo Park, CA, United States</span> 
+                                            <span class="text-truncate me-3"><i class="far fa-building text-primary me-2"></i>Facebook</span> 
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $450</span> 
+                                        </div>
+                                    </div>                                         
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center"> 
+                                        <div class="d-flex mb-3"> 
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> 
+                                            <a class="btn btn-primary" href="https://www.opph3hftrk.com/6GDBW3D/26LHXZM/">Apply Now</a> 
+                                        </div>                                             
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small> 
+                                    </div>                                         
+                                </div>
+                            </div>                                 
+                            <div class="job-item p-4 mb-4"> 
+                                <div class="row g-4"> 
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="wh.jpg" alt="" style="width: 80px; height: 80px;"> 
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3"></h5>
+                                            <h5 class="mb-3"><img src="https://flagcdn.com/us.svg" width="25px">&nbsp;Senior Software Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Seattle, WA, United States</span> 
+                                            <span class="text-truncate me-3"><i class="far fa-building text-primary me-2"></i>Freelance Work</span> 
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$125 - $300</span>
+                                        </div>
+                                    </div>                                         
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center"> 
+                                        <div class="d-flex mb-3"> 
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> 
+                                            <a class="btn btn-primary" href="https://www.opph3hftrk.com/6GDBW3D/261TC5C/">Apply Now</a> 
+                                        </div>                                             
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2026</small> 
+                                    </div>                                         
+                                </div>                                     
+                            </div>                                 
+                            <div class="job-item p-4 mb-4"> 
+                                <div class="row g-4"> 
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center"> 
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="al.jpg" alt="" style="width: 80px; height: 80px;"> 
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3"><img src="https://flagcdn.com/us.svg" width="25px">&nbsp;Lead Consultant</h5> 
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Memphis, TN, United States</span>&nbsp;
+                                            <span class="text-truncate me-3"><i class="far fa-building text-primary me-2"></i>Aldi</span> 
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$200 - $400</span>
+                                        </div>                                             
+                                    </div>                                         
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center"> 
+                                        <div class="d-flex mb-3"> 
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> 
+                                            <a class="btn btn-primary" href="https://www.opph3hftrk.com/6GDBW3D/26HQ6HF/">Apply Now</a> 
+                                        </div>                                             
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small> 
+                                    </div>                                         
+                                </div>                                     
                             </div>
+                            <div class="job-item p-4 mb-4"> 
+                                <div class="row g-4"> 
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center"> 
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Kelly_356.png/180px-Kelly_356.png" alt="" style="width: 80px; height: 80px;"> 
+                                        <div class="text-start ps-4"> 
+                                            <h5 class="mb-3"><img src="https://flagcdn.com/us.svg" width="25px">&nbsp;Remote Customer Service Representative (Entry Level)</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Atlanta, GA, United States</span> 
+                                            <span class="text-truncate me-3"><i class="far fa-building text-primary me-2"></i>Kelly Services</span> 
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$200 - $400</span> 
+                                        </div>
+                                    </div>                                         
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center"> 
+                                        <div class="d-flex mb-3"> 
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> 
+                                            <a class="btn btn-primary" href="https://www.opph3hftrk.com/6GDBW3D/268RQSD/">Apply Now</a> 
+                                        </div>                                             
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 05 Jul, 2026</small> 
+                                    </div>                                         
+                                </div>                                     
+                            </div>
+							  
+						
+                            <a class="btn btn-primary py-3 px-5" href="job-list.html">Browse More Jobs</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- slider Area End-->
-        <!-- Our Services Start -->
-        <div class="our-services section-pad-t30">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>FEATURED TOURS Packages</span>
-                            <h2>Browse Top Categories </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-contnet-center">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-tour"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Creative</a></h5>
-                                <span>(653)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-cms"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Design & Development</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-report"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Sales & Marketing</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-app"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Mobile Application</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-helmet"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Construction</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-high-tech"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Information Technology</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-real-estate"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Real Estate</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-ion">
-                                <span class="flaticon-content"></span>
-                            </div>
-                            <div class="services-cap">
-                               <h5><a href="job_listing.html">Content Writer</a></h5>
-                                <span>(658)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- More Btn -->
-                <!-- Section Button -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="browse-btn2 text-center mt-50">
-                            <a href="job_listing.html" class="border-btn2">Browse All Sectors</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Our Services End -->
-        <!-- Online CV Area Start -->
-         <div class="online-cv cv-bg section-overly pt-90 pb-120"  data-background="assets/img/gallery/cv_bg.jpg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="cv-caption text-center">
-                            <p class="pera1">FEATURED TOURS Packages</p>
-                            <p class="pera2"> Make a Difference with Your Online Resume!</p>
-                            <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Online CV Area End-->
-        <!-- Featured_job_start -->
-        <section class="featured-job-area feature-padding">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>Recent Job</span>
-                            <h2>Featured Jobs</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="wh.jpg" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Freelance</h4></a>
-                                    <ul>
-                                        <li>Work From Home</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Illinois, Chicago</li>
-                                        <li>$120 - $180</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="https://www.opph3hftrk.com/6GDBW3D/261TC5C/">Apply Now</a>
-                                <span>9 hours ago</span>
-                            </div>
-                        </div>
-                        <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="al.jpg" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Wear House</h4></a>
-                                    <ul>
-                                        <li>Aldi</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Nevada, Elko</li>
-                                        <li>$150 - $200</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="https://www.opph3hftrk.com/6GDBW3D/26HQ6HF/">Apply Now</a>
-                                <span>5 hours ago</span>
-                            </div>
-                        </div>
-                         <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="fe.jpg" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Driving</h4></a>
-                                    <ul>
-                                        <li>Fedex</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>California, Vista</li>
-                                        <li>$200 - $300</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="https://www.opph3hftrk.com/6GDBW3D/26387TZ/">Apply Now</a>
-                                <span>12 hours ago</span>
-                            </div>
-                        </div>
-						 <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="ke.jpg" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Accountent</h4></a>
-                                    <ul>
-                                        <li>Kelly Service</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>New York, Kenmore</li>
-                                        <li>$100 - $150</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="https://www.opph3hftrk.com/6GDBW3D/268RQSD/">Apply Now</a>
-                                <span>7 hours ago</span>
-                            </div>
-                        </div>
-                         <!-- single-job-content -->
-                        <div class="single-job-items mb-30">
-                            <div class="job-items">
-                                <div class="company-img">
-                                    <a href="job_details.html"><img src="fa.jpg" alt=""></a>
-                                </div>
-                                <div class="job-tittle">
-                                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
-                                    <ul>
-                                        <li>Facebook</li>
-                                        <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>$350 - $400</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="items-link f-right">
-                                <a href="https://www.opph3hftrk.com/6GDBW3D/26LHXZM/">Apply Now</a>
-                                <span>10 hours ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Featured_job_end -->
-        <!-- How  Apply Process Start-->
-        <div class="apply-process-area apply-bg pt-150 pb-150" data-background="assets/img/gallery/how-applybg.png">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle white-text text-center">
-                            <span>Apply process</span>
-                            <h2> How it works</h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Apply Process Caption -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-search"></span>
-                            </div>
-                            <div class="process-cap">
-                               <h5>1. Search a job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-curriculum-vitae"></span>
-                            </div>
-                            <div class="process-cap">
-                               <h5>2. Apply for job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-process text-center mb-30">
-                            <div class="process-ion">
-                                <span class="flaticon-tour"></span>
-                            </div>
-                            <div class="process-cap">
-                               <h5>3. Get your job</h5>
-                               <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </div>
-        <!-- How  Apply Process End-->
+
+
+        <script>
+            function startCountdownForAll() {
+                const countdownElements = document.querySelectorAll('small.text-truncate');
+                const targetDate = new Date();
+                targetDate.setHours(targetDate.getHours() + 48); // Set the target date to 48 hours from now
+        
+                function updateCountdown() {
+                    const now = new Date();
+                    const timeRemaining = targetDate - now;
+        
+                    countdownElements.forEach(element => {
+                        if (timeRemaining <= 0) {
+                            element.innerHTML = '<i class="far fa-calendar-alt text-primary me-2"></i>Date Line: Countdown Finished';
+                        } else {
+                            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 48)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        
+                            element.innerHTML = `<i class="far fa-calendar-alt text-primary me-2"></i>Date Line: ${hours}h ${minutes}m ${seconds}s`;
+                        }
+                    });
+        
+                    if (timeRemaining <= 0) {
+                        clearInterval(interval); // Stop updating once the countdown is finished
+                    }
+                }
+        
+                updateCountdown(); // Initial call to set the countdown immediately
+                const interval = setInterval(updateCountdown, 1000); // Update the countdown every second
+            }
+        
+            startCountdownForAll(); // Start the countdown for all elements
+        </script>
+
+
+        <!-- Jobs End -->
+<ins style="width: 300px;height:250px" data-width="300" data-height="250" class="u2640158fcd" data-domain="//125700.shop" data-affquery="/423aed4cc596cfd93129/2640158fcd/?placementName=default"><script src="//125700.shop/js/responsive.js" async></script></ins>
+
         <!-- Testimonial Start -->
-        <div class="testimonial-area testimonial-padding">
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <!-- Testimonial contents -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-xl-8 col-lg-8 col-md-10">
-                        <div class="h1-testimonial-active dot-style">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
+                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Working with your company has been a game-changer for our marketing strategies. Their innovative approach and attention to detail helped us launch our most successful campaign yet. The team's expertise and dedication are unmatched. I highly recommend them to anyone looking to elevate their brand.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Sarah Thompson</h5>
+                                <small>Marketing Director</small>
                             </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>The support and guidance I received from your company were exceptional. Their deep understanding of software development and commitment to solving complex issues made a significant difference in our project. They were always available and ready to tackle any challenge. I couldn’t have asked for a better partner.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Michael Lee</h5>
+                                <small>Software Developer</small>
                             </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption ">
-                                    <!-- founder -->
-                                    <div class="testimonial-founder  ">
-                                        <div class="founder-img mb-30">
-                                            <img src="assets/img/testmonial/testimonial-founder.png" alt="">
-                                            <span>Margaret Lawson</span>
-                                            <p>Creative Director</p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-top-cap">
-                                        <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>I can’t thank your company enough for their incredible work on our website redesign. The process was smooth and the results exceeded our expectations. They took the time to understand our vision and delivered a site that truly reflects our brand. Their professionalism and creativity are top-notch.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">David Roberts</h5>
+                                <small>Small Business Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>The team at your company provided invaluable insights and support for our financial planning needs. Their expertise and strategic advice helped us make informed decisions that greatly improved our financial performance. They are reliable, knowledgeable, and a pleasure to work with.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Jessica Martinez</h5>
+                                <small>Financial Analyst</small>
                             </div>
                         </div>
                     </div>
@@ -493,262 +699,75 @@
             </div>
         </div>
         <!-- Testimonial End -->
-         <!-- Support Company Start-->
-         <div class="support-company-area support-padding fix">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="right-caption">
-                            <!-- Section Tittle -->
-                            <div class="section-tittle section-tittle2">
-                                <span>What we are doing</span>
-                                <h2>24k Talented people are getting Jobs</h2>
-                            </div>
-                            <div class="support-caption">
-                                <p class="pera-top">Mollit anim laborum duis au dolor in voluptate velit ess cillum dolore eu lore dsu quality mollit anim laborumuis au dolor in voluptate velit cillum.</p>
-                                <p>Mollit anim laborum.Duis aute irufg dhjkolohr in re voluptate velit esscillumlore eu quife nrulla parihatur. Excghcepteur signjnt occa cupidatat non inulpadeserunt mollit aboru. temnthp incididbnt ut labore mollit anim laborum suis aute.</p>
-                                <a href="about.html" class="btn post-btn">Post a job</a>
-                            </div>
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="privacy-policy.html">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="terms.html">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="text-white mb-4">Developed by</h5>
+                        <p class="mb-2"><i class="fa fa-user me-3"></i>Macclum Arman</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+8801960201261</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>macclumarman@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/macclumarman?igsh=NmtvajVuNm1ueGpm"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61561800177609&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://x.com/macclumarman?t=xADpXr61jMLfjwwzw2jkAw&s=09"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="support-location-img">
-                            <img src="assets/img/service/support-img.jpg" alt="">
-                            <div class="support-img-cap text-center">
-                                <p>Since</p>
-                                <span>1994</span>
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Get in touch with us</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">GlobalJobFinder24</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Developed by <a class="border-bottom" href="talents.html">Macclum Arman </a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Support Company End-->
-        <!-- Blog Area Start -->
-        <div class="home-blog-area blog-h-padding">
-            <div class="container">
-                <!-- Section Tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <span>Our latest blog</span>
-                            <h2>Our recent news</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="assets/img/blog/home-blog1.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>|   Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="assets/img/blog/home-blog2.jpg" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>|   Properties</p>
-                                    <h3><a href="single-blog.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="#" class="more-btn">Read more »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Blog Area End -->
+        <!-- Footer End -->
 
-    </main>
-    <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-bg footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                             <div class="footer-tittle">
-                                 <h4>About Us</h4>
-                                 <div class="footer-pera">
-                                     <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
-                                </div>
-                             </div>
-                         </div>
 
-                       </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Contact Info</h4>
-                                <ul>
-                                    <li>
-                                    <p>Address :Your address goes
-                                        here, your demo address.</p>
-                                    </li>
-                                    <li><a href="#">Phone : +8880 44338899</a></li>
-                                    <li><a href="#">Email : info@colorlib.com</a></li>
-                                </ul>
-                            </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> 
+    </div>
 
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Important Link</h4>
-                                <ul>
-                                    <li><a href="#"> View Project</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Testimonial</a></li>
-                                    <li><a href="#">Proparties</a></li>
-                                    <li><a href="#">Support</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Newsletter</h4>
-                                <div class="footer-pera footer-pera2">
-                                 <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
-                             </div>
-                             <!-- Form -->
-                             <div class="footer-form" >
-                                 <div id="mc_embed_signup">
-                                     <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                     method="get" class="subscribe_form relative mail_part">
-                                         <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                         class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                         onblur="this.placeholder = ' Email Address '">
-                                         <div class="form-icon">
-                                             <button type="submit" name="submit" id="newsletter-submit"
-                                             class="email_icon newsletter-submit button-contactForm"><img src="assets/img/icon/form.png" alt=""></button>
-                                         </div>
-                                         <div class="mt-10 info"></div>
-                                     </form>
-                                 </div>
-                             </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               <!--  -->
-               <div class="row footer-wejed justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                        <!-- logo -->
-                        <div class="footer-logo mb-20">
-                        <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                    <div class="footer-tittle-bottom">
-                        <span>5000+</span>
-                        <p>Talented Hunter</p>
-                    </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="footer-tittle-bottom">
-                            <span>451</span>
-                            <p>Talented Hunter</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <!-- Footer Bottom Tittle -->
-                        <div class="footer-tittle-bottom">
-                            <span>568</span>
-                            <p>Talented Hunter</p>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
-        <!-- footer-bottom area -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                     <div class="row d-flex justify-content-between align-items-center">
-                         <div class="col-xl-10 col-lg-10 ">
-                             <div class="footer-copy-right">
-                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                             </div>
-                         </div>
-                         <div class="col-xl-2 col-lg-2">
-                             <div class="footer-social f-right">
-                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                 <a href="#"><i class="fas fa-globe"></i></a>
-                                 <a href="#"><i class="fab fa-behance"></i></a>
-                             </div>
-                         </div>
-                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- JS here -->
-	
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-	    <!-- Jquery Mobile Menu -->
-        <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
 
-		<!-- Jquery Slick , Owl-Carousel Plugins -->
-        <script src="./assets/js/owl.carousel.min.js"></script>
-        <script src="./assets/js/slick.min.js"></script>
-        <script src="./assets/js/price_rangs.js"></script>
-        
-		<!-- One Page, Animated-HeadLin -->
-        <script src="./assets/js/wow.min.js"></script>
-		<script src="./assets/js/animated.headline.js"></script>
-        <script src="./assets/js/jquery.magnific-popup.js"></script>
-
-		<!-- Scrollup, nice-select, sticky -->
-        <script src="./assets/js/jquery.scrollUp.min.js"></script>
-        <script src="./assets/js/jquery.nice-select.min.js"></script>
-		<script src="./assets/js/jquery.sticky.js"></script>
-        
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- Jquery Plugins, main Jquery -->	
-        <script src="./assets/js/plugins.js"></script>
-        <script src="./assets/js/main.js"></script>
-        
-    </body>
 </html>
